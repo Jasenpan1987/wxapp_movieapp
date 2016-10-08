@@ -1,0 +1,7 @@
+<view class="container">
+    <import src="../templates/movieListTempl.wxml"/>
+    <template is="movieListTempl" data="{{movies}}"></template>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+</view>

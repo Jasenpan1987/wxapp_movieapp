@@ -1,0 +1,57 @@
+@import "../templates/movieListTempl.wxss";
+
+.searchPage {
+    background-color: #2B2B2B;
+}
+
+.searchInput {
+    border: 1px solid red;
+    background-color: white;
+    border-radius: 5%;
+    flex: 1;
+    margin-right: 15rpx;
+    margin-top: 2rpx;
+}
+
+.searchBtnContainer {
+    background-color: coral;
+    color: coral;
+    border-radius: 5%;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rpx;
+    padding-left: 30rpx;
+    padding-right: 10rpx;
+}
+
+.searchHelper {
+    padding-left: 25rpx;
+    margin-right: 15rpx;   
+}
+
+.searchHelperText {
+    font-size: 0.9em;
+    color: white;
+}
+
+.movieListContainer{
+    
+}
+
+.headerContainer {
+    display: block;
+}
+
+.notFoundContainer {
+    padding-top: 25rpx;
+    padding-left: 25rpx;
+    padding-right: 25rpx;
+}
+
+.notFoundText {
+    color: aliceblue;
+    font-size: 1.1em;
+}

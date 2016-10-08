@@ -1,0 +1,39 @@
+<view class="container2">
+    <view class="titleContainer">
+            <text class="titleText">{{movie.title}}</text>
+    </view>
+    <view class="topContainer">
+        <view class="imageContainer">
+            <image style="height: 370rpx; width: 230rpx;"
+                        mode="aspectFill" src="{{movie.image}}"></image>
+        </view>
+        <view class="movieInfoContainer">
+            <text class="movieInfoText">评分：{{movie.rating}} 分</text>
+            <text class="movieInfoText">出版：{{movie.year}}</text>
+            <text class="movieInfoText">导演：{{movie.directors}}</text>
+            <text class="movieInfoText">类型：{{movie.genres}}</text>
+        </view>
+    </view>
+    <view class="bottomContainer">
+    <loading hidden="{{movie}}">
+        加载中...
+    </loading>
+    <text class="introText">主演：</text>
+    <view class="castsContainer">
+        <block wx:for="{{movie.casts}}">
+            <view class="castContainer">
+                <text class="castName">{{item.name}}</text>
+                <image style="height: 210rpx; width: 110rpx"
+                        mode="aspectFill" src="{{item.avatars.small}}"></image>
+            </view>
+        </block>
+        
+    </view>
+    <text class="introText">内容简介：</text>
+    <view class="summaryContainer">
+        <text class="summaryText">
+            {{movie.summary}}
+        </text>
+    </view>
+    </view>
+</view>

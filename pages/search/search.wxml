@@ -1,0 +1,29 @@
+<view class="container searchPage">
+    <view class="headerContainer">
+        <view class="searchContainer">
+            <input class="searchInput" bindinput="inputChangeHandler"/>
+            <view class="searchBtnContainer">
+                <button type="default" size="mini" plain="plain" bindtap="searchBtnClickHandler" hover-class="other-button-hover" class="searchBtn"> 搜索 </button>
+            </view>
+        </view>
+        <view class="searchHelper">
+            <text class="searchHelperText">关键词：{{keywords}}</text>
+        </view>
+    </view>
+
+    <import src="../templates/movieListTempl.wxml"/>
+    <view class="movieListContainer">
+        <template is="movieListTempl" data="{{movies}}"></template>
+    </view>
+    <view class="notFoundContainer" style="display: {{notFoundDisplay}};">
+        <text class="notFoundText">对不起，没有找到与“{{keywords}}”相关的条目</text>
+    </view>
+    <loading hidden="{{hidden}}">
+        加载中...
+    </loading>
+
+    <modal class="modal" hidden="{{modalHidden}}" no-cancel bindconfirm="modalConfirm">
+        <view> 请输入关键词 </view>
+    </modal>
+
+</view>

@@ -1,0 +1,27 @@
+.content{
+    background-color: #2B2B2B;
+    min-height: 100%;
+}
+
+.movie-item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 5rpx;
+    margin-top: 5rpx;
+    margin-right: 5rpx;
+    border: 2px solid silver;
+    background-color: #2B2B2B;
+    border-radius: 2%;
+}
+
+.movie-image {
+    margin-left: '3rpx';
+}
+
+.movie-text {
+    margin-left: 36rpx;
+    margin-top: 20rpx;
+    font-size: 0.9em;
+    color:aliceblue;
+}

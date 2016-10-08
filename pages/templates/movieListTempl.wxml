@@ -1,0 +1,18 @@
+<template name="movieListTempl" movies="{{movies}}" datas="{{movies}}">
+    <block wx:for="{{movies}}">
+        <view class="movie-list">
+            <view class="movie-item" bindtap="movieTabHandler" id="{{item.movieId}}">
+                <view class="movie-image">
+                    <image style="height: 270rpx; width: 170rpx"
+                    mode="aspectFill" src="{{item.image}}"></image>
+                </view>
+                <view class="movie-text">
+                    <text>名称：{{item.title}}{{"\n"}}</text> 
+                    <text>导演：{{item.directors}}{{"\n"}}</text> 
+                    <text>类型：{{item.genres}}{{"\n"}}</text> 
+                    <text>主演：{{item.casts}}</text>
+                </view>
+            </view>
+        </view>
+    </block>
+</template>

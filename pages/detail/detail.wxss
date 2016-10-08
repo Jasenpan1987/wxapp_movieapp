@@ -1,0 +1,97 @@
+container2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #2B2B2B;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10rpx;
+    padding-bottom:10rpx; 
+    background-color: #2B2B2B;
+}
+
+.titleText{
+    font-size: 1.2em;
+    color: white;
+    background-color: #2B2B2B;
+}
+
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #2B2B2B;
+}
+
+.imageContainer{
+    display: flex;
+    margin-left: 50rpx;
+    margin-top: 12rpx;
+    align-items: flex-start;
+    background-color: #2B2B2B;
+    
+}
+
+.castsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #2B2B2B;
+}
+
+.castContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20rpx;
+    margin-bottom: 30rpx;
+    align-self: center;
+    background-color: #2B2B2B;
+}
+
+.introText{
+    margin-left: 40rpx;
+    margin-top: 40rpx;
+    font-size: 1.2;
+    color: white;
+    background-color: #2B2B2B;
+}
+
+.castName{
+    color: white;
+    font-size: 0.8em;
+    align-self: center;
+    background-color: #2B2B2B;
+}
+
+.movieInfoContainer{
+    display: flex;
+    margin-left: 40rpx;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2B2B2B;
+}
+
+.movieInfoText{
+    color: white;
+}
+
+.summaryContainer{
+    display: flex;
+    flex: 1;
+    background-color: #2B2B2B;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.summaryText{
+    color: white;
+    font-size: 0.9em;
+    background-color: #2B2B2B;
+}
+
+.bottomContainer{
+    padding-top: 50rpx;
+    background-color: #2B2B2B;
+}
